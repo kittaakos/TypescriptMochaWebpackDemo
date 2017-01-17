@@ -11,5 +11,5 @@ git clone https://github.com/kittaakos/TypescriptMochaWebpackDemo.git \
 
 
 [source]: https://github.com/vintem/TypescriptMochaWebpackDemo
-[blog]: http://templecoding.com/blog/2016/02/02/how-to-setup-testing-using-typescript-mocha-chai-sinon-karma-and-webpack/
+[blog]: https://templecoding.com/blog/2016/02/02/how-to-setup-testing-using-typescript-mocha-chai-sinon-karma-and-webpack/
 [@vintem]: https://github.com/vintem

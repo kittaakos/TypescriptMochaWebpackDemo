@@ -1,27 +1,41 @@
 var webpackConfig = require('./webpack.config');
+var webpack = require('webpack');
 
 module.exports = function (config) {
   config.set({
     basePath: '',
     frameworks: ['mocha', 'chai', 'sinon'],
     files: [
-      'test/**/*.ts'
+      'test/tests.ts'
     ],
     exclude: [
     ],
     preprocessors: {
-      'test/**/*.ts': ['webpack']
+      'test/tests.ts': ['webpack', 'sourcemap']
+    },
+    mime: { 
+      'text/x-typescript': ['ts','tsx']
     },
     webpack: {
       module: webpackConfig.module,
-      resolve: webpackConfig.resolve
+      resolve: webpackConfig.resolve,
+      devtool: 'inline-source-map',
+        plugins: [
+          new webpack.SourceMapDevToolPlugin({
+            filename: null,
+            test: /\.(ts|js)($|\?)/i
+          })
+        ]
+     },
+     webpackServer: {
+       noInfo: true
     },
-    reporters: ['progress'],
+    reporters: ['mocha', 'junit'],
     port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,
     autoWatch: true,
-    browsers: ['PhantomJS'],
+    browsers: ['Chrome'],
     singleRun: false,
     concurrency: Infinity
   })

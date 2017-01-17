@@ -1,16 +1,15 @@
-# How to setup testing using Typescript, Mocha, Chai, Sinon, Karma and Webpack.
+Example to run Karma tests in Chrome with Typescript, Webpack, Mocha with source maps.
 
-Sample source code based on blog post: [How to setup testing using Typescript, Mocha, Chai, Sinon, Karma and Webpack](http://templecoding.com/blog/2016/02/02/how-to-setup-testing-using-typescript-mocha-chai-sinon-karma-and-webpack/)
+I got the code from [@vintem], so all credit goes to him. Check out his [source] and his [blog] for more details.
 
-# To get started:  
+```
+git clone https://github.com/kittaakos/TypescriptMochaWebpackDemo.git \
+&& cd TypescriptMochaWebpackDemo \
+&& npm install \
+&& npm run test
+```
 
-1. Install [NodeJS](http://www.nodejs.org)
-2. Open the command line of your choice and cd to the root directory of this repo on your machine
-3. `npm install webpack -g` - Installs webpack
-4. Download this repo (clone / fork)
-5. `npm install` - Installs packages (post install step added to package.json configuration file in order to execute tsd install after installing packages)
-6. `npm test` - Will execute karma start and run the tests (this step has been added to the package.json configuration file).
 
-# Change Log:  
-
-- Mar 17, 2015 - Added post install step to automatically run typings install after npm install.
+[source]: https://github.com/vintem/TypescriptMochaWebpackDemo
+[blog]: http://templecoding.com/blog/2016/02/02/how-to-setup-testing-using-typescript-mocha-chai-sinon-karma-and-webpack/
+[@vintem]: https://github.com/vintem

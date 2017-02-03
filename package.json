@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "postinstall": "typings install --overwrite --save",
-    "test": "karma start"
+    "postinstall": "./node_modules/.bin/typings install --overwrite --save",
+    "test": "./node_modules/.bin/karma start"
   },
   "author": "",
   "license": "ISC",

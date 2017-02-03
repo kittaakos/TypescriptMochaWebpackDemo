@@ -1,4 +1,5 @@
 Example to run Karma tests in Chrome with Typescript, Webpack, Mocha with source maps.
+This example uses Webpack 1.x.
 
 I got the code from [@vintem], so all credit goes to him. Check out his [source] and his [blog] for more details.
 
